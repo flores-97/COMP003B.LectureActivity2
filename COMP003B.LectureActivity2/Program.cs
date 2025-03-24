@@ -20,7 +20,12 @@ namespace COMP003B.LectureActivity2
             }
 
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
+
+            app.UseMiddleware<COMP003B.LectureActivity2.Middleware.RequestLoggingMiddleware>();
+
+            app.UseWelcomePage("/Welcome");
 
             app.UseRouting();
 
