@@ -26,9 +26,8 @@ namespace COMP003B.LectureActivity2
             app.UseStaticFiles();
 
             app.UseMiddleware<COMP003B.LectureActivity2.Middleware.RequestLoggingMiddleware>();
-            app.UseMiddleware<RequestLoggingMiddleware>();
 
-            app.UseWelcomePage("/Welcome");
+            app.UseWelcomePage("/welcome");
 
             app.UseRouting();
 

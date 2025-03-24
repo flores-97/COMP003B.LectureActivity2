@@ -5,7 +5,7 @@ namespace COMP003B.LectureActivity2.Controllers
     public class ProfileController1 : Controller
     {
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult About()
         {
             return View();
         }
