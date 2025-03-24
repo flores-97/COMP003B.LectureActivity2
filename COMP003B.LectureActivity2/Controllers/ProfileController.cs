@@ -2,7 +2,7 @@
 
 namespace COMP003B.LectureActivity2.Controllers
 {
-    public class ProfileController1 : Controller
+    public class ProfileController : Controller
     {
         [HttpGet]
         public IActionResult About()
