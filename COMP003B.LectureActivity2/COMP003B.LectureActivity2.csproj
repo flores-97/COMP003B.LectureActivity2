@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="COMP003B\LectureActivity2\" />
+  </ItemGroup>
+
 </Project>

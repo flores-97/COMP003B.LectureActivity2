@@ -1,3 +1,5 @@
+using COMP003B.LectureActivity2.Middleware;
+
 namespace COMP003B.LectureActivity2
 {
     public class Program
@@ -24,6 +26,7 @@ namespace COMP003B.LectureActivity2
             app.UseStaticFiles();
 
             app.UseMiddleware<COMP003B.LectureActivity2.Middleware.RequestLoggingMiddleware>();
+            app.UseMiddleware<RequestLoggingMiddleware>();
 
             app.UseWelcomePage("/Welcome");
 
